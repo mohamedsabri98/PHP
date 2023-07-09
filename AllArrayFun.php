@@ -143,4 +143,5 @@
   $sum = [10, 5, 2, 10];
 
   echo array_sum($sum);
+?>
 
