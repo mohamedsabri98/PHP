@@ -1,5 +1,5 @@
 <?php
-
+/*
   $friends = ["Osama", "Ahmed", "Sameh", "Mahmoud", "Gamal"];
   
     echo '<pre>';
@@ -28,9 +28,9 @@
     echo '<pre>';
     print_r(array_count_values($counting));
     echo '</pre>';
-
+*/
 //----------------------------------------------------------------------------------------------------
-
+/*
   $family = ["Osama", "Ahmed", "Sameh", "Mahmoud", "Gamal", ["Eman", "Noha"]];
   
     echo '<pre>';
@@ -73,5 +73,8 @@
     if (array_key_exists("PHP", $courses)) {
       echo "The Course Is Found And The Price Is: " . $courses["PHP"];
     }
+*/
 //------------------------------------------------------------------------------------------------------------------
+
+
 
