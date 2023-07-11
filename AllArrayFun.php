@@ -504,7 +504,7 @@
     --- Item => The Value Of The Current Iteration
 
   */
-/*
+
   function add($carry, $item) {
     echo "$carry<br>";
     echo "$item<br>";
@@ -516,6 +516,5 @@
   $nums = [10, 20, 50, 100, 10];
 
   echo array_reduce($nums, "add", 100);
-*/
 ?>
 
