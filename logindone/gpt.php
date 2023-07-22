@@ -21,6 +21,19 @@
         if (!$conn) {
             die("Connection failed: " . mysqli_connect_error());
         }
+        // Select the password from the database
+        $sql = "SELECT password FROM accounts /*WHERE name = 'myusername'*/";
+        $result = mysqli_query($conn, $sql);
+        $row = mysqli_fetch_assoc($result);
+        $password = $row['password'];
+
+        // Hash the password
+        $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+
+        // Update the password in the database
+        $sql = "UPDATE accounts SET password = '$hashed_password' /*WHERE username = 'myusername'*/";
+        mysqli_query($conn, $sql);
+        // Check if the form was submitted
 
         // Check if the form was submitted
         if (isset($_POST['submit'])) {
